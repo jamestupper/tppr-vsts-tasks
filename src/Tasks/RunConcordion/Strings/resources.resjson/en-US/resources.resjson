@@ -1,7 +1,7 @@
 {
-  "loc.friendlyName": "Run Concordian",
+  "loc.friendlyName": "Run Concordion",
   "loc.helpMarkDown": "",
-  "loc.description": "Run Concordian tests using NUnit. NUnit Test Adapter 2.x and 3.x do not currently work with addins.",
+  "loc.description": "Run Concordion tests using NUnit. NUnit Test Adapter 2.x and 3.x do not currently work with addins.",
   "loc.instanceNameFormat": "Run Concordion Tests - $(testAssembly)",
   "loc.group.displayName.advanced": "Advanced",
   "loc.input.label.sourcesDirectory": "Sources Directory",

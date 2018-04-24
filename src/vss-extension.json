@@ -23,6 +23,9 @@
         "concordion"
     ],
     "screenshots": [
+        {
+            "path": "img/run-concordion-settings.png"
+        }
     ],
     "content": {
         "details": {
