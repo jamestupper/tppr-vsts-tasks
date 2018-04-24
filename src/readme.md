@@ -10,4 +10,4 @@ Tasks here are built because there isn't already a task in the [Marketplace](htt
 
     This task will run Concordion tests using NUnit console. Currently, addins do not work with the NUnit test adapters ([see Github issue here](https://github.com/nunit/nunit3-vs-adapter/issues/222)).
 
-    [Docs found here](https://github.com/jamestupper/tppr-vsts-tasks/blob/master/src/Tasks/RunConcordion/icon.png)
+    [Docs found here](https://github.com/jamestupper/tppr-vsts-tasks/blob/master/src/Tasks/RunConcordion/readme.md)
