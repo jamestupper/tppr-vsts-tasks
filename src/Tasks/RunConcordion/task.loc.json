@@ -1,0 +1,130 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AArnott/vso-agent-tasks/9b41d803a/tasks.schema.json",
+  "id": "4c10c8f3-e81b-4614-a911-708e646ff28f",
+  "name": "RunConcordian",
+  "friendlyName": "ms-resource:loc.friendlyName",
+  "description": "ms-resource:loc.description",
+  "helpMarkDown": "ms-resource:loc.helpMarkDown",
+  "category": "Utility",
+  "author": "James Tupper",
+  "version": {
+    "Major": 0,
+    "Minor": 1,
+    "Patch": 2
+  },
+  "instanceNameFormat": "ms-resource:loc.instanceNameFormat",
+  "groups": [
+    {
+      "name": "advanced",
+      "displayName": "ms-resource:loc.group.displayName.advanced",
+      "isExpanded": false
+    }
+  ],
+  "inputs": [
+    {
+      "name": "sourcesDirectory",
+      "type": "filePath",
+      "label": "ms-resource:loc.input.label.sourcesDirectory",
+      "defaultValue": "$(build.sourcesDirectory)",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.sourcesDirectory"
+    },
+    {
+      "name": "buildConfiguration",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.buildConfiguration",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.buildConfiguration"
+    },
+    {
+      "name": "buildPlatform",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.buildPlatform",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.buildPlatform"
+    },
+    {
+      "name": "testAssembly",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.testAssembly",
+      "defaultValue": "**\\*test*.dll;-:**\\obj\\**",
+      "required": true,
+      "helpMarkDown": "ms-resource:loc.input.help.testAssembly"
+    },
+    {
+      "name": "nunitTestRunnerLocationMethod",
+      "type": "radio",
+      "label": "ms-resource:loc.input.label.nunitTestRunnerLocationMethod",
+      "required": false,
+      "groupName": "advanced",
+      "defaultValue": "version",
+      "options": {
+        "version": "Version",
+        "location": "Specific location"
+      }
+    },
+    {
+      "name": "nunitTestRunnerVersion",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.nunitTestRunnerVersion",
+      "defaultValue": "2.6.4",
+      "helpMarkDown": "ms-resource:loc.input.help.nunitTestRunnerVersion",
+      "visibleRule": "nunitTestRunnerLocationMethod = version",
+      "groupName": "advanced",
+      "options": {
+        "2.6.4": "NUnit 2.6.4"
+      }
+    },
+    {
+      "name": "nunitTestRunnerPath",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.nunitTestRunnerPath",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.nunitTestRunnerPath",
+      "visibleRule": "nunitTestRunnerLocationMethod = location",
+      "groupName": "advanced"
+    },
+    {
+      "name": "concordionLocationMethod",
+      "type": "radio",
+      "label": "ms-resource:loc.input.label.concordionLocationMethod",
+      "required": false,
+      "groupName": "advanced",
+      "defaultValue": "version",
+      "options": {
+        "version": "Version",
+        "location": "Specific location"
+      }
+    },
+    {
+      "name": "concordionVersion",
+      "type": "pickList",
+      "label": "ms-resource:loc.input.label.concordionVersion",
+      "defaultValue": "1.5.1",
+      "helpMarkDown": "ms-resource:loc.input.help.concordionVersion",
+      "visibleRule": "concordionLocationMethod = version",
+      "groupName": "advanced",
+      "options": {
+        "1.5.1": "Concordion 1.5.1"
+      }
+    },
+    {
+      "name": "concordionPath",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.concordionPath",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "ms-resource:loc.input.help.concordionPath",
+      "visibleRule": "concordionLocationMethod = location",
+      "groupName": "advanced"
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "index.js"
+    }
+  }
+}

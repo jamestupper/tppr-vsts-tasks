@@ -1,0 +1,70 @@
+{
+    "manifestVersion": 1,
+    "id": "tppr-vsts-tasks",
+    "name": "James Tupper's build and release tasks",
+    "version": "0.1.0",
+    "publisher": "jamestupper",
+    "public": true,
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/jamestupper/tppr-vsts-tasks"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Build extensions that don't exist, yet.",
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+        "build",
+        "concordion"
+    ],
+    "screenshots": [
+    ],
+    "content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "LICENSE.txt"
+        }
+    },
+    "links": {
+        "home": {
+            "uri": "http://github.com/jamestupper/tppr-vsts-tasks"
+        },
+        "repository": {
+            "uri": "https://github.com/jamestupper/tppr-vsts-tasks"
+        },
+        "issues": {
+            "uri": "https://github.com/jamestupper/tppr-vsts-tasks/issues"
+        }
+    },
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+    "icons": {
+        "default": "img/extension-icon.png"  
+    },
+    "files": [
+        {
+            "path": "Tasks/RunConcordion"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "run-concordion",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Tasks/RunConcordion"
+            }
+        }
+    ]
+}

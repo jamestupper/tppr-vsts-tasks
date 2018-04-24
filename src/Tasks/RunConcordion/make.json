@@ -1,0 +1,14 @@
+{
+    "externals": {
+        "archivePackages": [
+            {
+                "url": "https://github.com/nunit/nunitv2/releases/download/2.6.4/NUnit-2.6.4.zip",
+                "dest": "./"
+            },
+            {
+                "url": "https://github.com/concordion/concordion.net/releases/download/v1.5.1/Concordion.NET-1.5.1.zip",
+                "dest": "./"
+            }
+        ]
+    }
+}

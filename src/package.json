@@ -1,0 +1,39 @@
+{
+  "name": "tppr-vsts-tasks",
+  "version": "1.0.0",
+  "description": "Build tasks for VSTS/TFS",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "node make.js build",
+    "test": "node make.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestupper/tppr-vsts-tasks.git"
+  },
+  "author": "James Tupper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamestupper/tppr-vsts-tasks/issues"
+  },
+  "homepage": "https://github.com/jamestupper/tppr-vsts-tasks#readme",
+  "devDependencies": {
+    "adm-zip": "0.4.7",
+    "gulp": "3.9.0",
+    "gulp-util": "3.0.4",
+    "markdown-toc": "^1.2.0",
+    "minimatch": "3.0.2",
+    "minimist": "1.1.1",
+    "mocha": "2.3.3",
+    "node-uuid": "1.4.6",
+    "q": "1.4.1",
+    "semver": "4.3.3",
+    "shelljs": "^0.3.0",
+    "sync-request": "3.0.1",
+    "typescript": "2.3.4",
+    "validator": "3.33.0"
+  }
+}
