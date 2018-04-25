@@ -447,9 +447,8 @@ target.package = function() {
 
     // package
     ensureTool('tfx');
-    var extensionJsonPath = path.join(buildExtensionPath, 'vss-extension.json');
     mkdir('-p', packagePath);
-    run(`tfx extension create --manifests ${extensionJsonPath} --output-path ${packagePath}`);
+    run(`tfx extension create --root ${buildExtensionPath} --manifests vss-extension.json --output-path ${packagePath}`);
 }
 
 // used by CI that does official publish

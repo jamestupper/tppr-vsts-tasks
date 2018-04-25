@@ -67,7 +67,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "_build/Tasks/RunConcordion"
+                "name": "Tasks/RunConcordion"
             }
         }
     ]
