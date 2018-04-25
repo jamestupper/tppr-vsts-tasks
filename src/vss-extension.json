@@ -48,8 +48,8 @@
         }
     },
     "branding": {
-        "color": "rgb(34, 34, 34)",
-        "theme": "dark"
+        "color": "rgb(255, 255, 255)",
+        "theme": "light"
     },
     "icons": {
         "default": "img/extension-icon.png"  
