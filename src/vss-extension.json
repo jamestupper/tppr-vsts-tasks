@@ -56,7 +56,7 @@
     },
     "files": [
         {
-            "path": "Tasks/RunConcordion"
+            "path": "Tasks"
         }
     ],
     "contributions": [
@@ -67,7 +67,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "Tasks/RunConcordion"
+                "name": "_build/Tasks/RunConcordion"
             }
         }
     ]
