@@ -120,6 +120,15 @@
       "helpMarkDown": "ms-resource:loc.input.help.concordionPath",
       "visibleRule": "concordionLocationMethod = location",
       "groupName": "advanced"
+    },
+    {
+        "name": "testToRun",
+        "type": "string",
+        "label": "The name of the test to be run",
+        "defaultValue": "Tamarac.Gcs.Spec.SpecFixture",
+        "required": false,
+        "helpMarkDown": "Optionally supply the name of the test to be run. It may be that of a test case, test fixture or a namespace",
+        "groupName": "advanced"
     }
   ],
   "execution": {
