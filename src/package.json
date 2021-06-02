@@ -22,7 +22,7 @@
   "homepage": "https://github.com/jamestupper/tppr-vsts-tasks#readme",
   "devDependencies": {
     "@types/node": "^15.6.1",
-    "adm-zip": "0.4.7",
+    "adm-zip": "0.4.11",
     "gulp": "3.9.0",
     "gulp-util": "3.0.4",
     "markdown-toc": "^1.2.0",
