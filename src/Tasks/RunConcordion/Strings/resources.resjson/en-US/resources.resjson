@@ -12,6 +12,8 @@
   "loc.input.help.buildPlatform": "The build platform",
   "loc.input.label.testAssembly": "Test Assembly",
   "loc.input.help.testAssembly": "Test binaries to run tests on. Wildcards can be used. For example, `**\\*test*.dll;-**\\obj\\**` for all dlls with test in the name while excluding files in any sub-directory named obj.",
+  "loc.input.label.nunitArguments": "NUnit Arguments",
+  "loc.input.help.nunitArguments": "Extra NUnit arguments to pass to the cli.",
   "loc.input.label.nunitTestRunnerLocationMethod": "Select NUnit Test Runner using",
   "loc.input.label.nunitTestRunnerVersion": "NUnit Test Runner version",
   "loc.input.help.nunitTestRunnerVersion": "The version of NUnit runner to use",
