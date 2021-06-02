@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "tppr-vsts-tasks",
     "name": "James Tupper's build and release tasks",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "publisher": "jamestupper",
     "public": true,
     "repository": {
