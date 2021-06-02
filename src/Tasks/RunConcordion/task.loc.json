@@ -54,6 +54,15 @@
       "helpMarkDown": "ms-resource:loc.input.help.testAssembly"
     },
     {
+      "name": "nunitArguments",
+      "type": "string",
+      "label": "ms-resource:loc.input.label.nunitArguments",
+      "defaultValue": "",
+      "required": false,
+      "groupName": "advanced",
+      "helpMarkDown": "ms-resource:loc.input.help.nunitArguments"
+    },
+    {
       "name": "nunitTestRunnerLocationMethod",
       "type": "radio",
       "label": "ms-resource:loc.input.label.nunitTestRunnerLocationMethod",

@@ -73,9 +73,15 @@ async function run() {
         tl.mkdirP(testResultsDirectory);
         let buildId: string = tl.getVariable('Build.BuildId');
         let testResultsFile: string = tl.resolve(testResultsDirectory, `ConcordionTestResults-${buildId}.xml`);
+        let nunitArgs: string = tl.getInput("nunitArguments");
 
         // execute concordion tests
-        let nunit: trm.ToolRunner = tl.tool(nunitExePath).arg(`/basepath=${testsBasePath}`).arg(`/result=${testResultsFile}`).arg(testFiles);
+        let nunit: trm.ToolRunner = tl
+            .tool(nunitExePath)
+            .arg(`/basepath=${testsBasePath}`)
+            .arg(`/result=${testResultsFile}`)
+            .arg(nunitArgs)
+            .arg(testFiles);
 
         // run nunit test console runner
         let rc: number;
